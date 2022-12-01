@@ -16,5 +16,3 @@ class StudentModel with _$StudentModel {
 }
 
 
-
-

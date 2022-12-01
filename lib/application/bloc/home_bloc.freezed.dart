@@ -21,6 +21,7 @@ mixin _$HomeEvent {
     required TResult Function(String name) nameChange,
     required TResult Function(String age) ageChange,
     required TResult Function(String number) numberChange,
+    required TResult Function() addStudent,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -28,6 +29,7 @@ mixin _$HomeEvent {
     TResult? Function(String name)? nameChange,
     TResult? Function(String age)? ageChange,
     TResult? Function(String number)? numberChange,
+    TResult? Function()? addStudent,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -35,6 +37,7 @@ mixin _$HomeEvent {
     TResult Function(String name)? nameChange,
     TResult Function(String age)? ageChange,
     TResult Function(String number)? numberChange,
+    TResult Function()? addStudent,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -43,6 +46,7 @@ mixin _$HomeEvent {
     required TResult Function(_NameChange value) nameChange,
     required TResult Function(_AgeChange value) ageChange,
     required TResult Function(_NumberChange value) numberChange,
+    required TResult Function(_AddStudent value) addStudent,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +54,7 @@ mixin _$HomeEvent {
     TResult? Function(_NameChange value)? nameChange,
     TResult? Function(_AgeChange value)? ageChange,
     TResult? Function(_NumberChange value)? numberChange,
+    TResult? Function(_AddStudent value)? addStudent,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -57,6 +62,7 @@ mixin _$HomeEvent {
     TResult Function(_NameChange value)? nameChange,
     TResult Function(_AgeChange value)? ageChange,
     TResult Function(_NumberChange value)? numberChange,
+    TResult Function(_AddStudent value)? addStudent,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -112,23 +118,15 @@ class __$$_NameChangeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NameChange with DiagnosticableTreeMixin implements _NameChange {
+class _$_NameChange implements _NameChange {
   const _$_NameChange(this.name);
 
   @override
   final String name;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'HomeEvent.nameChange(name: $name)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'HomeEvent.nameChange'))
-      ..add(DiagnosticsProperty('name', name));
   }
 
   @override
@@ -154,6 +152,7 @@ class _$_NameChange with DiagnosticableTreeMixin implements _NameChange {
     required TResult Function(String name) nameChange,
     required TResult Function(String age) ageChange,
     required TResult Function(String number) numberChange,
+    required TResult Function() addStudent,
   }) {
     return nameChange(name);
   }
@@ -164,6 +163,7 @@ class _$_NameChange with DiagnosticableTreeMixin implements _NameChange {
     TResult? Function(String name)? nameChange,
     TResult? Function(String age)? ageChange,
     TResult? Function(String number)? numberChange,
+    TResult? Function()? addStudent,
   }) {
     return nameChange?.call(name);
   }
@@ -174,6 +174,7 @@ class _$_NameChange with DiagnosticableTreeMixin implements _NameChange {
     TResult Function(String name)? nameChange,
     TResult Function(String age)? ageChange,
     TResult Function(String number)? numberChange,
+    TResult Function()? addStudent,
     required TResult orElse(),
   }) {
     if (nameChange != null) {
@@ -188,6 +189,7 @@ class _$_NameChange with DiagnosticableTreeMixin implements _NameChange {
     required TResult Function(_NameChange value) nameChange,
     required TResult Function(_AgeChange value) ageChange,
     required TResult Function(_NumberChange value) numberChange,
+    required TResult Function(_AddStudent value) addStudent,
   }) {
     return nameChange(this);
   }
@@ -198,6 +200,7 @@ class _$_NameChange with DiagnosticableTreeMixin implements _NameChange {
     TResult? Function(_NameChange value)? nameChange,
     TResult? Function(_AgeChange value)? ageChange,
     TResult? Function(_NumberChange value)? numberChange,
+    TResult? Function(_AddStudent value)? addStudent,
   }) {
     return nameChange?.call(this);
   }
@@ -208,6 +211,7 @@ class _$_NameChange with DiagnosticableTreeMixin implements _NameChange {
     TResult Function(_NameChange value)? nameChange,
     TResult Function(_AgeChange value)? ageChange,
     TResult Function(_NumberChange value)? numberChange,
+    TResult Function(_AddStudent value)? addStudent,
     required TResult orElse(),
   }) {
     if (nameChange != null) {
@@ -259,23 +263,15 @@ class __$$_AgeChangeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AgeChange with DiagnosticableTreeMixin implements _AgeChange {
+class _$_AgeChange implements _AgeChange {
   const _$_AgeChange(this.age);
 
   @override
   final String age;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'HomeEvent.ageChange(age: $age)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'HomeEvent.ageChange'))
-      ..add(DiagnosticsProperty('age', age));
   }
 
   @override
@@ -301,6 +297,7 @@ class _$_AgeChange with DiagnosticableTreeMixin implements _AgeChange {
     required TResult Function(String name) nameChange,
     required TResult Function(String age) ageChange,
     required TResult Function(String number) numberChange,
+    required TResult Function() addStudent,
   }) {
     return ageChange(age);
   }
@@ -311,6 +308,7 @@ class _$_AgeChange with DiagnosticableTreeMixin implements _AgeChange {
     TResult? Function(String name)? nameChange,
     TResult? Function(String age)? ageChange,
     TResult? Function(String number)? numberChange,
+    TResult? Function()? addStudent,
   }) {
     return ageChange?.call(age);
   }
@@ -321,6 +319,7 @@ class _$_AgeChange with DiagnosticableTreeMixin implements _AgeChange {
     TResult Function(String name)? nameChange,
     TResult Function(String age)? ageChange,
     TResult Function(String number)? numberChange,
+    TResult Function()? addStudent,
     required TResult orElse(),
   }) {
     if (ageChange != null) {
@@ -335,6 +334,7 @@ class _$_AgeChange with DiagnosticableTreeMixin implements _AgeChange {
     required TResult Function(_NameChange value) nameChange,
     required TResult Function(_AgeChange value) ageChange,
     required TResult Function(_NumberChange value) numberChange,
+    required TResult Function(_AddStudent value) addStudent,
   }) {
     return ageChange(this);
   }
@@ -345,6 +345,7 @@ class _$_AgeChange with DiagnosticableTreeMixin implements _AgeChange {
     TResult? Function(_NameChange value)? nameChange,
     TResult? Function(_AgeChange value)? ageChange,
     TResult? Function(_NumberChange value)? numberChange,
+    TResult? Function(_AddStudent value)? addStudent,
   }) {
     return ageChange?.call(this);
   }
@@ -355,6 +356,7 @@ class _$_AgeChange with DiagnosticableTreeMixin implements _AgeChange {
     TResult Function(_NameChange value)? nameChange,
     TResult Function(_AgeChange value)? ageChange,
     TResult Function(_NumberChange value)? numberChange,
+    TResult Function(_AddStudent value)? addStudent,
     required TResult orElse(),
   }) {
     if (ageChange != null) {
@@ -406,23 +408,15 @@ class __$$_NumberChangeCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NumberChange with DiagnosticableTreeMixin implements _NumberChange {
+class _$_NumberChange implements _NumberChange {
   const _$_NumberChange(this.number);
 
   @override
   final String number;
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'HomeEvent.numberChange(number: $number)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'HomeEvent.numberChange'))
-      ..add(DiagnosticsProperty('number', number));
   }
 
   @override
@@ -448,6 +442,7 @@ class _$_NumberChange with DiagnosticableTreeMixin implements _NumberChange {
     required TResult Function(String name) nameChange,
     required TResult Function(String age) ageChange,
     required TResult Function(String number) numberChange,
+    required TResult Function() addStudent,
   }) {
     return numberChange(number);
   }
@@ -458,6 +453,7 @@ class _$_NumberChange with DiagnosticableTreeMixin implements _NumberChange {
     TResult? Function(String name)? nameChange,
     TResult? Function(String age)? ageChange,
     TResult? Function(String number)? numberChange,
+    TResult? Function()? addStudent,
   }) {
     return numberChange?.call(number);
   }
@@ -468,6 +464,7 @@ class _$_NumberChange with DiagnosticableTreeMixin implements _NumberChange {
     TResult Function(String name)? nameChange,
     TResult Function(String age)? ageChange,
     TResult Function(String number)? numberChange,
+    TResult Function()? addStudent,
     required TResult orElse(),
   }) {
     if (numberChange != null) {
@@ -482,6 +479,7 @@ class _$_NumberChange with DiagnosticableTreeMixin implements _NumberChange {
     required TResult Function(_NameChange value) nameChange,
     required TResult Function(_AgeChange value) ageChange,
     required TResult Function(_NumberChange value) numberChange,
+    required TResult Function(_AddStudent value) addStudent,
   }) {
     return numberChange(this);
   }
@@ -492,6 +490,7 @@ class _$_NumberChange with DiagnosticableTreeMixin implements _NumberChange {
     TResult? Function(_NameChange value)? nameChange,
     TResult? Function(_AgeChange value)? ageChange,
     TResult? Function(_NumberChange value)? numberChange,
+    TResult? Function(_AddStudent value)? addStudent,
   }) {
     return numberChange?.call(this);
   }
@@ -502,6 +501,7 @@ class _$_NumberChange with DiagnosticableTreeMixin implements _NumberChange {
     TResult Function(_NameChange value)? nameChange,
     TResult Function(_AgeChange value)? ageChange,
     TResult Function(_NumberChange value)? numberChange,
+    TResult Function(_AddStudent value)? addStudent,
     required TResult orElse(),
   }) {
     if (numberChange != null) {
@@ -518,6 +518,120 @@ abstract class _NumberChange implements HomeEvent {
   @JsonKey(ignore: true)
   _$$_NumberChangeCopyWith<_$_NumberChange> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_AddStudentCopyWith<$Res> {
+  factory _$$_AddStudentCopyWith(
+          _$_AddStudent value, $Res Function(_$_AddStudent) then) =
+      __$$_AddStudentCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_AddStudentCopyWithImpl<$Res>
+    extends _$HomeEventCopyWithImpl<$Res, _$_AddStudent>
+    implements _$$_AddStudentCopyWith<$Res> {
+  __$$_AddStudentCopyWithImpl(
+      _$_AddStudent _value, $Res Function(_$_AddStudent) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_AddStudent implements _AddStudent {
+  const _$_AddStudent();
+
+  @override
+  String toString() {
+    return 'HomeEvent.addStudent()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_AddStudent);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String name) nameChange,
+    required TResult Function(String age) ageChange,
+    required TResult Function(String number) numberChange,
+    required TResult Function() addStudent,
+  }) {
+    return addStudent();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(String name)? nameChange,
+    TResult? Function(String age)? ageChange,
+    TResult? Function(String number)? numberChange,
+    TResult? Function()? addStudent,
+  }) {
+    return addStudent?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String name)? nameChange,
+    TResult Function(String age)? ageChange,
+    TResult Function(String number)? numberChange,
+    TResult Function()? addStudent,
+    required TResult orElse(),
+  }) {
+    if (addStudent != null) {
+      return addStudent();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_NameChange value) nameChange,
+    required TResult Function(_AgeChange value) ageChange,
+    required TResult Function(_NumberChange value) numberChange,
+    required TResult Function(_AddStudent value) addStudent,
+  }) {
+    return addStudent(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_NameChange value)? nameChange,
+    TResult? Function(_AgeChange value)? ageChange,
+    TResult? Function(_NumberChange value)? numberChange,
+    TResult? Function(_AddStudent value)? addStudent,
+  }) {
+    return addStudent?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_NameChange value)? nameChange,
+    TResult Function(_AgeChange value)? ageChange,
+    TResult Function(_NumberChange value)? numberChange,
+    TResult Function(_AddStudent value)? addStudent,
+    required TResult orElse(),
+  }) {
+    if (addStudent != null) {
+      return addStudent(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _AddStudent implements HomeEvent {
+  const factory _AddStudent() = _$_AddStudent;
 }
 
 /// @nodoc
@@ -649,7 +763,7 @@ class __$$_HomeStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_HomeState with DiagnosticableTreeMixin implements _HomeState {
+class _$_HomeState implements _HomeState {
   const _$_HomeState(
       {required this.isLoading,
       required this.name,
@@ -677,20 +791,8 @@ class _$_HomeState with DiagnosticableTreeMixin implements _HomeState {
   }
 
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+  String toString() {
     return 'HomeState(isLoading: $isLoading, name: $name, age: $age, number: $number, studentsList: $studentsList)';
-  }
-
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
-    properties
-      ..add(DiagnosticsProperty('type', 'HomeState'))
-      ..add(DiagnosticsProperty('isLoading', isLoading))
-      ..add(DiagnosticsProperty('name', name))
-      ..add(DiagnosticsProperty('age', age))
-      ..add(DiagnosticsProperty('number', number))
-      ..add(DiagnosticsProperty('studentsList', studentsList));
   }
 
   @override

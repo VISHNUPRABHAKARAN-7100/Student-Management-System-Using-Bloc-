@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:student_management_system/application/bloc/home_bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CustomButtonWidgetForSubmit extends StatelessWidget {
   const CustomButtonWidgetForSubmit({
@@ -19,41 +21,7 @@ class CustomButtonWidgetForSubmit extends StatelessWidget {
       width: double.infinity,
       child: MaterialButton(
         onPressed: () {
-          //                             if (ageEditingController.text.isEmpty ||
-          //     nameEditingController.text.isEmpty ||
-          //     numberEditingController.text.isEmpty) {
-          //   ScaffoldMessenger.of(context).showSnackBar(
-          //     SnackBar(
-          //       backgroundColor: Colors.red.shade500,
-          //       shape: const RoundedRectangleBorder(
-          //         borderRadius: BorderRadius.only(
-          //           topLeft: Radius.circular(20),
-          //           topRight: Radius.circular(20),
-          //         ),
-          //       ),
-          //       content: const Text(
-          //         'Enter the Details of Student',
-          //         style: TextStyle(fontSize: 14),
-          //       ),
-          //     ),
-          //   );
-          //   return;
-          // }
-          {
-            FocusScope.of(context).unfocus();
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                backgroundColor: Colors.green.shade500,
-                shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(20),
-                    topRight: Radius.circular(20),
-                  ),
-                ),
-                content: const Text('Submited'),
-              ),
-            );
-          }
+          context.read<HomeBloc>().add(const HomeEvent.addStudent());
         },
         child: Text(
           buttonText,

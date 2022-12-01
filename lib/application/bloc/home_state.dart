@@ -1,6 +1,5 @@
 part of 'home_bloc.dart';
 
-
 @freezed
 class HomeState with _$HomeState {
   const factory HomeState({
@@ -17,7 +16,7 @@ class HomeState with _$HomeState {
       name: null,
       age: null,
       number: null,
-      studentsList: null,
+      studentsList: [],
     );
   }
 }
